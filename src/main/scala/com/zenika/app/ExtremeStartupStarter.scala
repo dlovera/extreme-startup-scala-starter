@@ -20,7 +20,7 @@ class ExtremeStartupStarter extends ScalatraServlet {
     req match {
       case nameRequest() => "<YOUR NAME>"
       case _ =>
-        log("Unrecognized question: " + req)
+        log("Unrecognized question")
         pass()
     }
   }
